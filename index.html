@@ -1,101 +1,77 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="LMG Exhibitions - Creative Event Display Experts">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>LMG Exhibitions</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" href="favicon.png" />
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="lightbox.css" />
+  <script src="lightbox-plus-jquery.min.js" defer></script>
 </head>
 <body>
   <header>
-    <div class="logo">🎨 LMG Exhibitions</div>
-    <nav class="nav">
-      <ul class="nav-links">
+    <nav>
+      <div class="logo">LMG <span>Exhibitions</span></div>
+      <input type="checkbox" id="menu-toggle"/>
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="menu">
+        <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="menu-toggle" id="menu-toggle">☰</div>
   </header>
 
-  <section class="hero">
+  <section id="hero">
+    <div class="hero-slider">
+      <img src="hero1.jpg" alt="Hero Image 1">
+      <img src="hero2.jpg" alt="Hero Image 2">
+      <img src="hero3.jpg" alt="Hero Image 3">
+    </div>
     <div class="hero-text">
-      <h1>Bold Displays. Memorable Moments.</h1>
-      <p>We design exhibition experiences that attract attention and connect with audiences.</p>
-      <a href="#contact" class="btn">Get in Touch</a>
+      <h1>LMG Exhibitions</h1>
+      <p>We design and create stunning exhibition booths, events & experiences</p>
     </div>
   </section>
 
-  <section id="about" class="section">
+  <section id="about">
     <h2>About Us</h2>
-    <p>At LMG Exhibitions, we specialize in crafting stunning event and display environments that leave lasting impressions.</p>
+    <p>
+      At LMG Exhibitions, we believe in the power of storytelling through design.
+      Our team of creatives and fabricators bring visions to life with striking
+      exhibition stands, event spaces, and branded environments. With over a decade
+      of experience across industries, our portfolio ranges from trade show exhibits
+      to corporate event setups and custom experiential builds. We guide you from
+      concept through installation with precision, creativity, and passion.
+    </p>
   </section>
 
-  <section id="services" class="section services">
+  <section id="services">
     <h2>Our Services</h2>
-    <div class="service-cards">
-      <div class="card">
-        <h3>Exhibition Booths</h3>
-        <p>Custom-built setups for any scale of event.</p>
-      </div>
-      <div class="card">
-        <h3>Event Branding</h3>
-        <p>Visual consistency from print to stage.</p>
-      </div>
-      <div class="card">
-        <h3>Interior Styling</h3>
-        <p>Perfect layouts and décor for impact.</p>
-      </div>
-    </div>
+    <ul>
+      <li>Exhibition Booth Design</li>
+      <li>Event Setup and Styling</li>
+      <li>3D Branding Installations</li>
+      <li>Custom Stage Design</li>
+      <li>Portable Display Units</li>
+    </ul>
   </section>
-
-  <section id="portfolio" class="section">
-    <h2>Portfolio</h2>
-    <div class="gallery">
-      <div class="gallery-item">📷 Project 1</div>
-      <div class="gallery-item">📷 Project 2</div>
-      <div class="gallery-item">📷 Project 3</div>
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-    <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="_replyto" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <a href="https://wa.me/254712345678" class="whatsapp-float" target="_blank">💬</a>
 
   <footer>
-    <p>&copy; 2025 LMG Exhibitions</p>
-    <div class="social-icons">
-      <a href="#">🌐</a>
-      <a href="#">📘</a>
-      <a href="#">📸</a>
+    <div class="social">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
     </div>
+    <p>&copy; 2025 LMG Exhibitions</p>
+    <a href="#" id="backToTop">↑ Back to Top</a>
   </footer>
 
-    <a href="#" class="back-to-top" style="position: fixed; bottom: 40px; right: 20px; display: inline-block; background: #e60000; color: white; padding: 10px 15px; border-radius: 50%; text-align: center; font-size: 20px; z-index: 999;">↑</a>
+  <a href="https://wa.me/254700000000" class="whatsapp-float" target="_blank">💬</a>
 
-    <footer style="background: #111; color: #fff; padding: 40px 20px; text-align: center;">
-        <p style="margin: 0 0 15px;">&copy; 2025 LMG Exhibitions. All rights reserved.</p>
-        <div style="font-size: 24px;">
-            <a href="#" style="color: #fff; margin: 0 10px;"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" style="color: #fff; margin: 0 10px;"><i class="fab fa-twitter"></i></a>
-            <a href="#" style="color: #fff; margin: 0 10px;"><i class="fab fa-instagram"></i></a>
-            <a href="#" style="color: #fff; margin: 0 10px;"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-    </footer>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    
 </body>
 </html>
