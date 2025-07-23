@@ -2,105 +2,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Le Meilluer Global Exhibitions</title>
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LMG Exhibition</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="navbar">
-        <div class="logo">
-            <img src="logo2.jpg" alt="LMG Logo" />
-            <span>Le Meillure Global Exhibitions</span>
-        </div>
-        <nav id="nav-links" class="nav-links">
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <div class="hamburger" id="hamburger">&#9776;</div>
-    </header>
+  <header>
+    <nav class="navbar">
+      <div class="logo">LMG</div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="hero">
-        <div class="slider" id="slider">
-            <img src="slider1.jpg" alt="Slide 1" class="slide" />
-            <img src="slider2.jpg" alt="Slide 2" class="slide" />
-            <img src="slider3.jpg" alt="Slide 3" class="slide" />
-        </div>
-        <div class="cta">
-            <h1>Welcome to Le Meilluer Global Exhibitions</h1>
-            <a href="#contact" class="btn">Book Us Now</a>
-        </div>
-    </section>
+  <section class="hero">
+    <div class="hero-text">
+      <h1><span id="typewriter"></span></h1>
+    </div>
+    <div class="slider">
+      <img src="img1.jpg" class="slide" />
+      <img src="img2.jpg" class="slide" />
+      <img src="img3.jpg" class="slide" />
+    </div>
+  </section>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>
-            Le Meilleur Global (LMG) is a premier exhibitions and expos organizer known for elegance, 
-            creativity, and professionalism. With a deep passion for bringing brands to life, 
-            we deliver stunning experiences through strategic design and impactful presentations...
-        </p>
-    </section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>LMG is a creative branding and exhibition company offering top-tier setups, strategic branding consultation, and immersive physical marketing experiences. We merge design and impact to showcase your brand like never before.</p>
+  </section>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Expo Booth Design & Build</li>
-            <li>Event Branding</li>
-            <li>Product Launch Exhibitions</li>
-            <li>Corporate Showcases</li>
-        </ul>
-    </section>
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Exhibition Booth Design</li>
+      <li>Branding & Identity</li>
+      <li>Physical Setup & Consultation</li>
+      <li>Design & Creative Solutions</li>
+    </ul>
+  </section>
 
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="grid">
-            <img src="assets/portfolio1.jpg" alt="Project 1" />
-            <img src="assets/portfolio2.jpg" alt="Project 2" />
-        </div>
-    </section>
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="img1.jpg" />
+      <img src="img2.jpg" />
+      <img src="img3.jpg" />
+    </div>
+  </section>
 
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="grid">
-            <img src="assets/gallery1.jpg" alt="Gallery 1" />
-            <img src="assets/gallery2.jpg" alt="Gallery 2" />
-        </div>
-    </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
 
-    <section id="testimonials">
-        <h2>Testimonials</h2>
-        <div class="carousel" id="testimonial-carousel">
-            <div class="testimonial active">"LMG made our event unforgettable!" – Client A</div>
-            <div class="testimonial">"Creative, timely, and professional service!" – Client B</div>
-            <div class="testimonial">"Highly recommend LMG for all exhibition needs." – Client C</div>
-        </div>
-    </section>
+  <a href="https://wa.me/254700000000" class="whatsapp-float">WhatsApp</a>
+  <a href="#" class="top-btn" onclick="scrollToTop()">⬆</a>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Name" required />
-            <input type="email" placeholder="Email" required />
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">✈ Send</button>
-        </form>
-    </section>
-
-    <footer>
-        <div class="socials">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">LinkedIn</a>
-        </div>
-        <p>© 2025 LMG Global. All rights reserved.</p>
-    </footer>
-
-    <a href="#contact" class="whatsapp">💬</a>
-    <a href="#top" class="back-to-top">↑</a>
+  <script src="script.js"></script>
 </body>
 </html>
