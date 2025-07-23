@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LMG Global Exhibitions</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="logo.png" alt="LMG Logo"/> LMG Global</div>
+    <nav id="nav">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <section id="hero">
+    <div class="slider">
+      <img src="hero1.jpg" class="slide" />
+      <img src="hero2.jpg" class="slide" />
+    </div>
+    <div class="cta">
+      <h1>Welcome to LMG Global</h1>
+      <p>Exhibitions & Expo Solutions</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>LMG Global (Le Meilleur Global) is your premium partner for planning and executing world-class exhibitions and expos. Our team ensures elegance, detail, and results with minimalistic yet powerful visual presence.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Expo Booth Design</li>
+      <li>Event Branding</li>
+      <li>Logistics & Setup</li>
+      <li>Digital Marketing for Expos</li>
+    </ul>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <p>Showcasing our past successful exhibitions.</p>
+    <div class="image-grid">
+      <img src="portfolio1.jpg" />
+      <img src="portfolio2.jpg" />
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="image-grid">
+      <img src="gallery1.jpg" />
+      <img src="gallery2.jpg" />
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="carousel">
+      <p>"LMG made our expo presence stand out. Highly recommended!" - Client A</p>
+      <p>"Professional, elegant, and powerful visual experience." - Client B</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">✈ Send</button>
+    </form>
+  </section>
+
+  <div class="whatsapp-btn">💬</div>
+  <div class="back-to-top" onclick="scrollToTop()">↑</div>
+
+  <footer>
+    <p>© 2025 LMG Global. All rights reserved.</p>
+    <div class="socials">🌐 📘 🐦 📸</div>
+  </footer>
+</body>
+</html>
